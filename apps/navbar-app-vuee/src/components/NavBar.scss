@@ -1,10 +1,15 @@
+.fondoNavVar{
+  background-color: #ffffff;
+  border-top: 4px solid #00b0ea;
+  border-bottom: 1px solid #eee;
+}
 .dropdown-toggle::after {
   display:none;
 }
 .logo{
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 130px;
+  height: 40px;
 }
 .nombreLogo{
   padding-left: 10px;
@@ -24,6 +29,12 @@
   margin: 0.45rem 0 0;
 }
 
+.microfrontend{
+  color: #555;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+}
 .nombreUsuario{
   width: 100%;
   margin: 0;
@@ -36,7 +47,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 5px;
-  color: #FFFFFF;
+  color: #555;
   outline: 0;
 }@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
 

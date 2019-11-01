@@ -48,13 +48,14 @@ class LoginForm extends Component {
                 ToastsStore.success("Bienvenido: " + this.user.email);
                 globalEventDistributor.dispatch({type: constants.LOGIN, user: this.user});
                 localStorage.setItem('user', JSON.stringify(this.user));
+                 navigateTo('/home');
             } else {
                 ToastsStore.error('Usuario y/o contraseña incorrecto');
             }
         }
         catch (error) {
         }
-        navigateTo('/home');
+
         window.dispatchEvent(new Event('loginEvent'));
     }
 }
@@ -68,7 +69,7 @@ class LoginForm extends Component {
         const { username, password, submitted } = this.state;
         return (
             <div className="wrap">
-            <ToastsContainer store={ToastsStore} position={ToastsContainerPosition.TOP_RIGHT} />
+            <ToastsContainer store={ToastsStore} timer={4000} position={ToastsContainerPosition.TOP_RIGHT} />
     <div className="">
             <p className="form-title">
             Iniciar sesión</p>

@@ -1,17 +1,17 @@
 <template>
 <div>
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fondoNavVar">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <img class="logo" src="../assets/logo-dummis.jpg" alt="">
-            <span class="navbar-brand mr-auto nombreLogo"> MicroFrontend </span>
+            <img class="logo" src="../assets/logo-teco.png" alt="">
+            <span class="navbar-brand microfrontend"> MicroFrontend </span>
 
             <div class="">
                 <ul class="nav pull-right navbar-collapse collapse dual-collapse profileDiv">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hola,{{this.userInfo.username}} <b class="caret"></b></a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle nombreUsuario" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hola,{{this.userInfo.username}} <b class="caret"></b></a>
                         <ul class="dropdown-menu dropdown-menu-right alinearDropDown">
                             <div class="profile">
                                 <div class="image">
