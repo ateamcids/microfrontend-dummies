@@ -29,7 +29,7 @@ export class GrillaComponent implements OnInit {
     window.dispatchEvent(new CustomEvent("EnviarMensaje", {
       detail: personaje
     }));
-    
+  }
   abrirTarjeta(personaje) {
     if (!personaje) {
       personaje = {nombre: 'Homero', apellido: 'Simpson', foto: 'https://media.canalnet.tv/2018/08/Homero-Simpson.jpeg'};
